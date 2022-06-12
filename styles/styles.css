@@ -2,24 +2,25 @@
     Header and Footer
 */
 
-.main__header {
+.header__main {
     margin: 0px;
     padding: 45px;
     background-color: #1b1b1b;
     width: 100vw;
-    height: 140px;
+    height: 15%;
     display: block;
+    position: relative;
 }
 
-.main__header-a {
+.header__logo {
     padding-right: 90px;
 }
 
-.main__header-a-img {
+.header__img {
     width: 380px;
 }
 
-.main__header-nav-li-a{
+.header__li--text{
     color: white;
     font-size: 40px;
     font-weight: bold;
@@ -27,33 +28,117 @@
     transition: font-size 0.2s;
 }
 
-.main__header-nav-li-a:hover{
+.header__li--text:hover{
     color: #f8f8c0;
     font-size: 45px;
 }
 
-.main__footer {
+.footer__main {
     margin: 0px;
     padding: 45px;
     background-color: #616161;
     color: white;
     width: 100vw;
-    height: 200px;
+    height: 20%;
     display: block;
 }
 
-.main__footer-h3 {
+.footer__title {
     display: block;
     padding: 0px 0px 10px 0px;
     color: #e4e2e2;
 }
 
-.main__footer-p {
+.footer__text {
     display: block;   
     padding: 0px 0px 20px 0px;
+}
+
+.social-media__link {
+    color: #FFF;
+    font-size: 40px;
+    position: relative;
+    transition: font-size 0.3s;
+}
+
+.social-media__link:hover {
+    color: #f8f8c0;
+    font-size: 50px;
 }
 
 /*
     Main Page
 */
 
+.background-page{
+    background-color: #26292b;
+    display: block;
+    position: relative;
+    width: 100vw;
+}
+
+.content-page {
+    background-color: #dbdbdb;
+    display: block;
+    position: relative;
+    width: 75%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+    padding: 30px 30px;
+}
+
+.content-article{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.article {
+    border-radius: 10px;
+    min-width: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.5s, border-radius 0.5s;
+}
+
+.article:hover {
+    box-shadow: inset 0px 0px 100px 2px #000000;
+    border-radius: 50px;
+}
+
+.article__text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.article__text--title {
+    color: #FFF;
+    background-color: #33173a;
+    border-radius: 10px;
+    padding:10px;
+    font-size: 25px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.article__text--text {
+    color: #FFF;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    padding:10px;
+    font-size: 20px;
+    width: fit-content;
+    position: relative;
+    right: -230px;
+}
