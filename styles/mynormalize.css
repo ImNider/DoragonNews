@@ -6,6 +6,10 @@ body {
     width: 100%;
 }
 
+script {
+    display: none;
+}
+
 * {
     padding: 0;
     margin: 0;
